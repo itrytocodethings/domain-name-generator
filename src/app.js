@@ -14,7 +14,7 @@ window.onload = function() {
 
   generateDomain(pronouns, adjs, nouns, extensions);
 
-  function generateDomain(pronouns, adjs, nouns) {
+  function generateDomain(pronouns, adjs, nouns, extensions) {
     pronouns.forEach(pronoun => {
       adjs.forEach(adj => {
         nouns.forEach(noun => {
