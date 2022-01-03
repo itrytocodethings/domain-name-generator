@@ -15,11 +15,13 @@ window.onload = function() {
   generateDomain(pronouns, adjs, nouns, extensions);
 
   function generateDomain(pronouns, adjs, nouns, extensions) {
+    //nested loops to loop through pronouns, adjs, nouns and extensions.
     pronouns.forEach(pronoun => {
       adjs.forEach(adj => {
         nouns.forEach(noun => {
           extensions.forEach(extension => {
             if (`.${noun}` == extension) {
+              //ex: if '.' added to the noun equals a valid extension value just use the extension. lastofus.us would be ex: [last][of][.us]
               console.log(`${pronoun}${adj}.${noun}`);
             } else {
               console.log(`${pronoun}${adj}${noun}${extension}`);
