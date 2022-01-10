@@ -21,8 +21,8 @@ window.onload = function() {
         nouns.forEach(noun => {
           extensions.forEach(extension => {
             if (`.${noun}` == extension) {
-              //ex: if '.' added to the noun equals a valid extension value just use the extension. lastofus.us would be ex: [last][of][.us]
-              console.log(`${pronoun}${adj}.${noun}`);
+              //ex: if '.noun' equals a valid extension value just use the extension. lastofus.us would be ex: [last][of][.us]
+              console.log(`${pronoun}${adj}${extension}`);
             } else {
               console.log(`${pronoun}${adj}${noun}${extension}`);
             }
